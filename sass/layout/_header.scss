@@ -1,0 +1,130 @@
+.header {
+  border-bottom: 1px solid #ececec;
+
+  &__section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.header__logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  &_dark {
+    color: var(--title-text-color);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu-nav__list {
+    display: none;
+  }
+
+  .header {
+    &__contact {
+      display: none;
+    }
+
+    &__mobile-menu-btn {
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      line-height: 0;
+    }
+
+    &__mobile-menu-icon {
+      fill: var(--title-text-color);
+      transition: fill 250ms var(--cubic-bezier);
+    }
+
+    &__mobile-menu-icon:hover,
+    &__mobile-menu-icon:focus {
+      fill: var(--blue-accent);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .header__mobile-menu-btn {
+      display: none;
+    }
+  }
+
+  //   .menu-nav {
+  //    align-items: center;
+
+  //    &_margin {
+  //        margin-left: 93px;
+  //     }
+  //    }
+
+  //  .menu-nav__list {
+  //     display: flex;
+  //   }
+
+  //   .menu-nav__item + .menu-nav__item {
+  //    margin-left: 50px;
+  //  }
+
+  //  .menu-nav__link,
+  //   .header__contact-link {
+  //      position: relative;
+
+  //     padding-top: 32px;
+  //    padding-bottom: 34px;
+
+  //      font-weight: 500;
+  //    font-size: 14px;
+  //    line-height: 1.14;
+  //   letter-spacing: 0.02em;
+
+  //     transition: color 250ms var(--cubic-bezier);
+  //   }
+
+  //   .menu-nav__link {
+  //    color: var(--title-text-color);
+  //    text-decoration: none;
+
+  //     &_active:after {
+  //      content: "";
+  //      position: absolute;
+  //      left: 0;
+  //      bottom: 0;
+
+  //     width: 100%;
+  //       height: 4px;
+
+  //      border-radius: 2px;
+  //        background-color: var(--blue-accent);
+  //    }
+  //   }
+
+  //    .header__contact {
+  //    display: flex;
+  //    margin-left: auto;
+  //    padding-top: 32px;
+  //    padding-bottom: 32px;
+  //  }
+
+  //   .header__nav-icon {
+  //     fill: currentColor;
+  //     margin-right: 10px;
+
+  //      &:hover {
+  //       fill: var(--blue-accent);
+  //      }
+
+  //      &_margin {
+  //        margin-right: 10px;
+  //     }
+  //    }
+
+  //   .header__contact-item_margin {
+  //      margin-left: 50px;
+  //   }
+
+  //  .header__contact-link {
+  //   color: var(--text-color);
+  //   text-decoration: none;
+}
