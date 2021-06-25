@@ -4,14 +4,45 @@
   padding-bottom: 60px;
 }
 
-.footer__container {
-  display: flex;
-  align-items: baseline;
+@media screen and (max-width: 767px) {
+  .footer__container {
+    display: flex;
+    // align-items: baseline;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-.studio-contact {
-  padding-right: 70px;
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: flex;
+    align-items: baseline;
+  }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__adaptive-section {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__adaptive-section {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .studio-contact {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+}
+
+// .studio-contact {
+//   padding-right: 70px;
+// }
 
 .studio-contact__logo {
   padding-bottom: 20px;
@@ -43,6 +74,20 @@
   text-decoration: none;
 
   transition: color 250ms var(--cubic-bezier);
+}
+
+@media screen and (min-width: 1200px) {
+  .social-contact {
+    margin-left: 70px;
+    margin-right: 93px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .social-contact {
+    text-align: center;
+    margin-bottom: 60px;
+  }
 }
 
 .social-contact__text {
@@ -78,8 +123,10 @@
   fill: var(--white-color);
 }
 
-.subscription-form_margin {
-  margin-left: 93px;
+@media screen and (max-width: 1199px) {
+  .subscription-form {
+    text-align: center;
+  }
 }
 
 .subscription-form__text {
@@ -91,9 +138,17 @@
   color: var(--white-color);
 }
 
-.subscription-form__section {
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 1200px) {
+  .subscription-form__section {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscription-form__label {
+    margin-right: 12px;
+  }
 }
 
 .subscription-form__input {
@@ -112,9 +167,9 @@
 
   transition: border 250ms var(--cubic-bezier);
 
-  &_margin {
-    margin-right: 12px;
-  }
+  // &_margin {
+  //   margin-right: 12px;
+  // }
 
   &:hover,
   &:focus {
@@ -125,7 +180,7 @@
 
 .subscription-form__btn {
   font-weight: 700;
-  size: 16px;
+  font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--white-color);
@@ -136,6 +191,14 @@
   padding: 10px 10px 10px 29px;
   width: 200px;
   height: 50px;
+
+  @media screen and (min-width: 480px) {
+    margin: 20px auto 0 auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+  }
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
