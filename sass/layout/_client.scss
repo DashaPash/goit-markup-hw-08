@@ -1,14 +1,29 @@
 .client-section__title {
   @extend %titles;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 .client-section__list {
   display: flex;
+  flex-flow: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+
+  @media screen and (min-width: 1200px) {
+    flex-flow: nowrap;
+  }
 }
 
-.client-section__item:not(:last-child) {
-  margin-right: 30px;
+.client-section__item {
+  flex-basis: calc((100% - 30px * 2) / 2);
+  margin-left: 30px;
+  margin-top: 30px;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px * 3) / 3);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
 }
 
 .client-section__link {

@@ -38,3 +38,9 @@
   padding-bottom: 27px;
   color: var(--white-color);
 }
+
+@media screen and (max-width: 1200px) {
+  .about {
+    display: none;
+  }
+}
