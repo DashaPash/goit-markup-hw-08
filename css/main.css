@@ -48,7 +48,7 @@ body {
   padding-right: 15px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .container {
     max-width: 480px;
     margin: 0 auto;
@@ -64,7 +64,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    max-width: 1199px;
   }
 }
 
@@ -500,7 +500,7 @@ body {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .features__icon-bg {
     width: 354px;
   }
@@ -562,7 +562,7 @@ body {
   color: var(--white-color);
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .about {
     display: none;
   }
@@ -623,6 +623,10 @@ body {
   .team__item:not(:first-child) {
     margin-left: 30px;
   }
+}
+
+.team__picture {
+  width: 100%;
 }
 
 .team__info {
@@ -885,14 +889,20 @@ body {
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
+  width: 100%;
   height: 50px;
-  width: 358px;
   padding: 15px 0px 15px 15px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: var(--dark-background-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   transition: border 250ms var(--cubic-bezier);
+}
+
+@media screen and (min-width: 480px) {
+  .subscription-form__input {
+    width: 450px;
+  }
 }
 
 .subscription-form__input:hover, .subscription-form__input:focus {
@@ -911,17 +921,12 @@ body {
   padding: 10px 10px 10px 29px;
   width: 200px;
   height: 50px;
+  margin: 20px auto 0 auto;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   background-color: var(--blue-accent);
   border: 1px solid transparent;
   transition: background-color 250ms var(--cubic-bezier);
-}
-
-@media screen and (min-width: 480px) {
-  .subscription-form__btn {
-    margin: 20px auto 0 auto;
-  }
 }
 
 @media screen and (min-width: 1200px) {

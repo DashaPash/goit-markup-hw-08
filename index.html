@@ -162,19 +162,42 @@
             <h2 class="about__title about__title_margin">Чем мы занимаемся</h2>
             <ul class="about__list list">
                 <li class="about__item">
-                    <img src="./images/studio-page/about/box1(1).jpg" alt="website creation" width="370" height="294">
+                    <picture class="about-pictures">
+                        <source srcset="./images/studio-page/about/about-descktop-1.webp 1x, ./images/studio-page/about/about-descktop-1@2x.webp 2x"
+                         media="(min-width: 1200px)" type="image/webp">
+                        <source
+                            srcset="./images/studio-page/about/about-descktop-1.jpg 1x, ./images/studio-page/about/about-descktop-1@2x.jpg 2x"
+                            media="(min-width: 1200px)">
+                        <img src="./images/studio-page/about/box1(1).jpg" alt="website creation" width="370" height="294">
+                    </picture>
                     <div class="about__box">
                         <p class="about__text">Десктопные приложения</p>
                     </div>
                 </li>
                 <li class="about__item">
-                    <img src="./images/studio-page/about/box2(1).jpg" alt="adaptive layout" width="370" height="294">
+                    <picture class="about-pictures">
+                        <source
+                            srcset="./images/studio-page/about/about-descktop-2.webp 1x, ./images/studio-page/about/about-descktop-2@2x.webp 2x"
+                            media="(min-width: 1200px)" type="image/webp">
+                        <source
+                            srcset="./images/studio-page/about/about-descktop-2.jpg 1x, ./images/studio-page/about/about-descktop-2@2x.jpg 2x"
+                            media="(min-width: 1200px)">
+                        <img src="./images/studio-page/about/box2(1).jpg" alt="adaptive layout" width="370" height="294">
+                    </picture>     
                     <div class="about__box">
                         <p class="about__text">Мобильные приложения</p>
                     </div>
                 </li>
                 <li class="about__item">
-                    <img src="./images/studio-page/about/box3(1).jpg" alt="color palette on tablet" width="370" height="294">
+                    <picture class="about-pictures">
+                        <source
+                            srcset="./images/studio-page/about/about-descktop-3.webp 1x, ./images/studio-page/about/about-descktop-3@2x.webp 2x"
+                            media="(min-width: 1200px)" type="image/webp">
+                        <source
+                            srcset="./images/studio-page/about/about-descktop-3.jpg 1x, ./images/studio-page/about/about-descktop-3@2x.jpg 2x"
+                            media="(min-width: 1200px)">
+                        <img src="./images/studio-page/about/box3(1).jpg" alt="color palette on tablet" width="370" height="294">       
+                    </picture>
                     <div class="about__box">
                         <p class="about__text">Дизайнерские решения</p>
                     </div>
@@ -188,7 +211,7 @@
             <h2 class="team__title">Наша команда</h2>
             <ul class="team__list list">
                 <li class="team__item">
-                    <picture class="team__picture">
+                    <picture>
                         <source
                             srcset="./images/studio-page/team/descktop/descktop-team-1.webp 1x, ./images/studio-page/team/descktop/descktop-team-1@2x.webp 2x"
                             media="(min-width: 1200px)" type="image/webp">
@@ -205,7 +228,7 @@
                          media="(max-width: 767px)" type="image/webp">
                         <source srcset="./images/studio-page/team/mobile/mob-team-1.jpg 1x, ./images/studio-page/team/mobile/mob-team-1@2x.jpg 2x"
                             media="(max-width: 767px)">
-                        <img src="./images/studio-page/team/Igor-Demyanenko.jpg" alt="Photo of a member of the WebStudio team Igor Demyanenko">
+                        <img class="team__picture" src="./images/studio-page/team/Igor-Demyanenko.jpg" alt="Photo of a member of the WebStudio team Igor Demyanenko">
                     </picture>
                         <div class="team__info" >
                             <h3 class="team__name">Игорь Демьяненко</h3>
@@ -242,7 +265,7 @@
                             </ul>
                         </div>       
                 <li class="team__item">
-                    <picture class="team__picture">
+                    <picture">
                         <source
                             srcset="./images/studio-page/team/descktop/descktop-team-2.webp 1x, ./images/studio-page/team/descktop/descktop-team-2@2x.webp 2x"
                             media="(min-width: 1200px)" type="image/webp">
@@ -261,7 +284,7 @@
                         <source
                             srcset="./images/studio-page/team/mobile/mob-team-2.jpg 1x, ./images/studio-page/team/mobile/mob-team-2@2x.jpg 2x"
                             media="(max-width: 767px)">
-                            <img src="./images/studio-page/team/Olga-Repina.jpg" alt="Photo of a member of the WebStudio team Olga Repina">
+                            <img class="team__picture" src="./images/studio-page/team/Olga-Repina.jpg" alt="Photo of a member of the WebStudio team Olga Repina">
                     </picture>  
                         <div class="team__info">
                             <h3 class="team__name">Ольга Репина</h3>
@@ -299,7 +322,7 @@
                         </div>         
                 </li>
                 <li class="team__item">
-                    <picture class="team__picture">
+                    <picture>
                         <source
                             srcset="./images/studio-page/team/descktop/descktop-team-3.webp 1x, ./images/studio-page/team/descktop/descktop-team-3@2x.webp 2x"
                             media="(min-width: 1200px)" type="image/webp">
@@ -318,7 +341,7 @@
                         <source
                             srcset="./images/studio-page/team/mobile/mob-team-3.jpg 1x, ./images/studio-page/team/mobile/mob-team-3@2x.jpg 2x"
                             media="(max-width: 767px)">
-                        <img src="./images/studio-page/team/Nikolay-Tarasov.jpg" alt="Photo of a member of the WebStudio team Nikolay Tarasov">
+                        <img class="team__picture" src="./images/studio-page/team/Nikolay-Tarasov.jpg" alt="Photo of a member of the WebStudio team Nikolay Tarasov">
                     </picture>
                         <div class="team__info">
                             <h3 class="team__name">Николай Тарасов</h3>
@@ -356,7 +379,7 @@
                         </div>
                 </li>
                 <li class="team__item">
-                    <picture class="team__picture">
+                    <picture>
                         <source
                             srcset="./images/studio-page/team/descktop/descktop-team-4.webp 1x, ./images/studio-page/team/descktop/descktop-team-4@2x.webp 2x"
                             media="(min-width: 1200px)" type="image/webp">
@@ -375,7 +398,7 @@
                         <source
                             srcset="./images/studio-page/team/mobile/mob-team-4.jpg 1x, ./images/studio-page/team/mobile/mob-team-4@2x.jpg 2x"
                             media="(max-width: 767px)">
-                        <img src="./images/studio-page/team/Mihail-Yermakov.jpg" alt="Photo of a member of the WebStudio team Mikhail Ermakov">
+                        <img class="team__picture" src="./images/studio-page/team/Mihail-Yermakov.jpg" alt="Photo of a member of the WebStudio team Mikhail Ermakov">
                     </picture>
                         <div class="team__info">
                             <h3 class="team__name">Михаил Ермаков</h3>
@@ -535,7 +558,7 @@
     </footer>
     <!--Модальное окно-->
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal-window">
             <button class="modal-window__btn" type="button" data-modal-close>
                 <svg class="modal-window__close-icon" width="18" height="18">
@@ -581,8 +604,8 @@
                 </form>
             </div>
         </div>
-    </div> -->
-    <!-- <script src="./js/modal.js"></script> -->
+    </div>
+    <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
 </body>
 
