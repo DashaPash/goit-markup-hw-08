@@ -278,10 +278,6 @@ body {
   transition: color 250ms var(--cubic-bezier);
 }
 
-.menu-nav__link_active {
-  color: var(--blue-accent);
-}
-
 .menu-nav__link_active:after {
   content: "";
   position: absolute;
