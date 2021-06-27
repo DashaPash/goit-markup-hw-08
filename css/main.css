@@ -130,6 +130,9 @@ body {
 .menu-nav__link:hover,
 .menu-nav__link:focus,
 .menu-nav__link_active,
+.mobile-menu__nav-link_active:hover,
+.mobile-menu__nav-link_active:focus,
+.mobile-menu__nav-link_active,
 .header__contact-link:hover,
 .header__contact-link:focus,
 .studio-contact__mail:hover,
@@ -275,6 +278,10 @@ body {
   transition: color 250ms var(--cubic-bezier);
 }
 
+.menu-nav__link_active {
+  color: var(--blue-accent);
+}
+
 .menu-nav__link_active:after {
   content: "";
   position: absolute;
@@ -284,6 +291,10 @@ body {
   height: 4px;
   border-radius: 2px;
   background-color: var(--blue-accent);
+}
+
+.menu-nav__link_active {
+  color: var(--blue-accent);
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
